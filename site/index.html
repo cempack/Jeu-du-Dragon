@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Jeu Du Dragon - Accueil</title>
+    <!-- Lien vers le fichier CSS pour le style -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Importation de la bibliothèque FontAwesome pour les icônes -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- Icône de l'onglet du navigateur -->
+    <link rel="icon" href="assets/icon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="bg-pattern">
+      <header>
+        <div class="container">
+          <!-- Logo du jeu -->
+          <div class="logo-container">
+            <img
+              src="assets/icon.ico"
+              alt="Dragon Game Logo"
+              height="64"
+              width="64"
+              class="float"
+            />
+          </div>
+          <h1 class="game-title">LE JEU DU DRAGON</h1>
+          <div class="title-underline"></div>
+          <!-- Menu de navigation -->
+          <nav>
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="#" class="nav-link pixel-corners">ACCUEIL</a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/about.html" class="nav-link pixel-corners"
+                  >À PROPOS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="pages/help.html" class="nav-link pixel-corners"
+                  >AIDE</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <div class="container">
+          <!-- Section d'accueil (Hero) -->
+          <section class="hero content-panel">
+            <div class="hero-content">
+              <h2 class="hero-title parallax" data-speed="0.2">
+                AVENTUREZ-VOUS DANS UN MONDE PIXELISÉ
+              </h2>
+              <p class="hero-text">
+                Explorez des niveaux variés, collectez des pièces, répondez aux
+                quiz et affrontez un dragon légendaire dans ce jeu de plateforme
+                rétro 2D.
+              </p>
+              <a
+                href="pages/download.html"
+                class="btn btn-primary pixel-corners"
+                >JOUER MAINTENANT</a
+              >
+            </div>
+          </section>
+
+          <!-- Section de présentation des personnages -->
+          <section class="content-panel">
+            <h2 class="section-title">CHOISISSEZ VOTRE HÉROS</h2>
+            <div class="character-showcase">
+              <!-- Carte du personnage : GUERRIER -->
+              <div
+                class="character-card pixel-corners"
+                style="opacity: 0; transform: translateY(20px)"
+              >
+                <img
+                  src="assets/Characters/Knight/preview.gif"
+                  alt="Chevalier"
+                  class="character-img"
+                  data-frames="4"
+                  data-width="32"
+                />
+                <h3 class="character-name">GUERRIER</h3>
+                <p class="character-desc">A la guerre comme à la guerre</p>
+              </div>
+              <!-- Carte du personnage : Archer -->
+              <div
+                class="character-card pixel-corners"
+                style="opacity: 0; transform: translateY(20px)"
+              >
+                <img
+                  src="assets/Characters/Archer/preview.gif"
+                  alt="Archer"
+                  class="character-img"
+                  data-frames="4"
+                  data-width="32"
+                />
+                <h3 class="character-name">ARCHER</h3>
+                <p class="character-desc">En plein dans le mille !</p>
+              </div>
+              <!-- Carte du personnage : Assassin -->
+              <div
+                class="character-card pixel-corners"
+                style="opacity: 0; transform: translateY(20px)"
+              >
+                <img
+                  src="assets/Characters/Assassin/preview.gif"
+                  alt="Assassin"
+                  class="character-img"
+                  data-frames="4"
+                  data-width="32"
+                />
+                <h3 class="character-name">ASSASSIN</h3>
+                <p class="character-desc">*Le silence est d'or*</p>
+              </div>
+              <!-- Carte du personnage : Mage (à venir) -->
+              <div
+                class="character-card pixel-corners coming-soon"
+                style="opacity: 0; transform: translateY(20px)"
+              >
+                <img
+                  src="assets/Characters/Mage/preview.gif"
+                  alt="Mage"
+                  class="character-img"
+                  data-frames="4"
+                  data-width="32"
+                />
+                <h3 class="character-name">MAGE</h3>
+                <p class="character-desc">Vous ne passerez pas !</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section des captures d'écran du jeu -->
+          <section class="content-panel">
+            <h2 class="section-title">APERÇU DU JEU</h2>
+            <div class="screenshots">
+              <div class="screenshot">
+                <img
+                  src="assets/Screenshots/gameplay1.png"
+                  alt="Capture d'écran du jeu 1"
+                  loading="lazy"
+                />
+              </div>
+              <div class="screenshot">
+                <img
+                  src="assets/Screenshots/gameplay2.png"
+                  alt="Capture d'écran du jeu 2"
+                  loading="lazy"
+                />
+              </div>
+              <div class="screenshot">
+                <img
+                  src="assets/Screenshots/gameplay3.png"
+                  alt="Capture d'écran du jeu 3"
+                  loading="lazy"
+                />
+              </div>
+              <div class="screenshot">
+                <img
+                  src="assets/screenshots/gameplay4.png"
+                  alt="Capture d'écran du jeu 4"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <!-- Pied de page -->
+      <footer>
+        <div class="container">
+          <p>Site fait avec ❤️ par Elliot Moreau</p>
+          <ul class="footer-links">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="pages/about.html">À Propos</a></li>
+            <li><a href="pages/help.html">Aide</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Fenêtre modale pour les captures d'écran -->
+    <div id="screenshotModal" class="modal">
+      <span class="close-modal">&times;</span>
+      <img class="modal-content" id="modalImg" loading="lazy" />
+    </div>
+
+    <!-- Conteneur d'animation des personnages -->
+    <div id="animation-container"></div>
+
+    <!-- Script JavaScript principal -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

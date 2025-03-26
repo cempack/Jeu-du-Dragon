@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Jeu Du Dragon - À Propos</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="bg-pattern">
+      <header>
+        <div class="container">
+          <!-- Logo du jeu -->
+          <div class="logo-container">
+            <img
+              src="../assets/icon.ico"
+              alt="Dragon Game Logo"
+              height="64"
+              width="64"
+              class="float"
+            />
+          </div>
+          <h1 class="game-title">LE JEU DU DRAGON</h1>
+          <div class="title-underline"></div>
+          <!-- Menu de navigation -->
+          <nav>
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="../index.html" class="nav-link pixel-corners"
+                  >ACCUEIL</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link pixel-corners">À PROPOS</a>
+              </li>
+              <li class="nav-item">
+                <a href="help.html" class="nav-link pixel-corners">AIDE</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <div class="container">
+          <!-- Section À propos du jeu -->
+          <section class="content-panel">
+            <h2 class="section-title">À PROPOS DU JEU</h2>
+            <div class="about-content">
+              <p>
+                <strong>Le Jeu Du Dragon</strong> est un jeu vidéo en 2D
+                développé en Python avec <strong>Pygame</strong>, créé pour le
+                concours <strong>Trophées NSI 2025</strong> par deux lycéens
+                français au lycée <strong>Edmond Perrier</strong> de Tulle.
+              </p>
+              <p>
+                Explorez divers niveaux, incarnez différents héros avec des
+                capacités uniques, et plongez dans un monde de pixels où dragons
+                et aventures vous attendent !
+              </p>
+            </div>
+          </section>
+
+          <!-- Section des technologies utilisées -->
+          <section class="content-panel">
+            <h2 class="section-title">TECHNOLOGIES UTILISÉES</h2>
+            <div class="about-features">
+              <ul class="feature-list">
+                <li><strong>Python</strong> : Langage de programmation.</li>
+                <li>
+                  <strong>Pygame</strong> : Bibliothèque pour le gameplay.
+                </li>
+                <li><strong>GitHub</strong> : Gestion du code source.</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Section des auteurs -->
+          <section class="content-panel">
+            <h2 class="section-title">AUTEURS</h2>
+            <div class="character-showcase">
+              <div class="character-card pixel-corners">
+                <img
+                  src="../assets/Characters/Knight/preview.gif"
+                  alt="Elliot Moreau"
+                  class="character-img"
+                />
+                <h3 class="character-name">ELLIOT MOREAU</h3>
+                <p class="character-desc">Développement et conception.</p>
+              </div>
+              <div class="character-card pixel-corners">
+                <img
+                  src="../assets/Characters/Archer/preview.gif"
+                  alt="William Laban"
+                  class="character-img"
+                />
+                <h3 class="character-name">WILLIAM LABAN</h3>
+                <p class="character-desc">Graphismes et vidéo.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section sur l'installation -->
+          <section class="content-panel">
+            <h2 class="section-title">INSTALLATION</h2>
+            <div>
+              <pre>
+1. Clonez le projet :
+   git clone https://github.com/cempack/Jeu-du-Dragon.git
+   cd Jeu-du-Dragon
+   cd jeu
+   cd sources
+
+2. Installez les dépendances :
+   pip install -r requirements.txt
+
+3. Lancez le jeu :
+   python main.py
+              </pre>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <!-- Pied de page -->
+      <footer>
+        <div class="container">
+          <p>Site fait avec ❤️ par Elliot Moreau</p>
+          <ul class="footer-links">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="about.html">À Propos</a></li>
+            <li><a href="#">Aide</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

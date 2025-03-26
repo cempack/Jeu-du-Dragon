@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Jeu Du Dragon - Aide</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="bg-pattern">
+      <header>
+        <div class="container">
+          <div class="logo-container">
+            <img
+              src="../assets/icon.ico"
+              alt="Dragon Game Logo"
+              height="64"
+              width="64"
+              class="float"
+            />
+          </div>
+          <h1 class="game-title">LE JEU DU DRAGON</h1>
+          <div class="title-underline"></div>
+          <nav>
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="../index.html" class="nav-link pixel-corners"
+                  >ACCUEIL</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link pixel-corners">À PROPOS</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link pixel-corners">AIDE</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <div class="container">
+          <!-- Section des contrôles du jeu -->
+          <section class="content-panel">
+            <h2 class="section-title">CONTRÔLES DU JEU</h2>
+
+            <table class="controls-table">
+              <thead>
+                <tr>
+                  <th>TOUCHE</th>
+                  <th>ACTION</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="key">←</span> <span class="key">→</span></td>
+                  <td>Se déplacer horizontalement</td>
+                </tr>
+                <tr>
+                  <td><span class="key">ESPACE</span></td>
+                  <td>
+                    Sauter (appuyez à nouveau en l'air pour effectuer un double
+                    saut)
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="key">Z</span></td>
+                  <td>Attaquer (chaque personnage a une attaque différente)</td>
+                </tr>
+                <tr>
+                  <td><span class="key">E</span></td>
+                  <td>Interagir avec les portails et téléporteurs</td>
+                </tr>
+                <tr>
+                  <td><span class="key">↑</span> <span class="key">↓</span></td>
+                  <td>
+                    Naviguer dans les menus et sélectionner les réponses aux
+                    quiz
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="key">ENTRÉE</span></td>
+                  <td>Confirmer une sélection dans les menus</td>
+                </tr>
+                <tr>
+                  <td><span class="key">ESC</span></td>
+                  <td>Fermer un menu ou annuler une sélection</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <!-- Section des personnages -->
+          <section class="content-panel">
+            <h2 class="section-title">PERSONNAGES JOUABLES</h2>
+            <ul class="tutorial-list">
+              <li class="tutorial-item">
+                <h3 class="tutorial-title">CHEVALIER</h3>
+                <p><strong>Vitesse:</strong> Moyenne (4)</p>
+                <p>
+                  <strong>Attaque:</strong> Puissante (2 points de dégâts),
+                  portée courte (50px)
+                </p>
+                <p>
+                  <strong>Spécialité:</strong> Plus résistant, idéal pour les
+                  débutants
+                </p>
+                <p>
+                  <strong>Stratégie:</strong> Approchez-vous des ennemis pour
+                  les frapper avec votre épée. Pendant l'attaque, vos mouvements
+                  sont bloqués.
+                </p>
+              </li>
+              <li class="tutorial-item">
+                <h3 class="tutorial-title">ARCHER</h3>
+                <p><strong>Vitesse:</strong> Rapide (5)</p>
+                <p>
+                  <strong>Attaque:</strong> Moyenne (1.2 points de dégâts),
+                  longue portée (140px)
+                </p>
+                <p>
+                  <strong>Spécialité:</strong> Attaque à distance, cadence de
+                  tir rapide
+                </p>
+                <p>
+                  <strong>Stratégie:</strong> Gardez vos distances et attaquez
+                  les ennemis de loin. Vous pouvez bouger tout en attaquant.
+                </p>
+              </li>
+              <li class="tutorial-item">
+                <h3 class="tutorial-title">ASSASSIN</h3>
+                <p><strong>Vitesse:</strong> Très rapide (6)</p>
+                <p>
+                  <strong>Attaque:</strong> Forte (1.6 points de dégâts), portée
+                  courte (40px)
+                </p>
+                <p>
+                  <strong>Spécialité:</strong> Mobilité excellente, attaques
+                  rapides
+                </p>
+                <p>
+                  <strong>Stratégie:</strong> Utilisez votre vitesse pour
+                  frapper rapidement puis vous éloigner. Pendant l'attaque, vos
+                  mouvements sont bloqués.
+                </p>
+              </li>
+              <li class="tutorial-item">
+                <h3 class="tutorial-title">MAGE</h3>
+                <p><strong>Vitesse:</strong> Modérée (4.5)</p>
+                <p>
+                  <strong>Attaque:</strong> Très forte (1.8 points de dégâts),
+                  bonne portée (110px)
+                </p>
+                <p><strong>Spécialité:</strong> Attaques magiques puissantes</p>
+                <p>
+                  <strong>Stratégie:</strong> Utilisez vos sorts à moyenne
+                  distance. Vous pouvez bouger tout en attaquant.
+                </p>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Section des mécaniques de jeu -->
+          <section class="content-panel">
+            <h2 class="section-title">MÉCANIQUES DE JEU</h2>
+            <ul class="tutorial-list">
+              <li class="tutorial-item">
+                <h3 class="tutorial-title">SYSTÈME DE VIE</h3>
+                <p>
+                  Votre personnage possède 3 cœurs (5 pour le boss final). Quand
+                  vous êtes touché par un ennemi, vous perdez un cœur.
+                </p>
+                <p>
+                  Après avoir subi des dégâts, vous êtes temporairement
+                  invincible pendant quelques secondes.
+                </p>
+                <p>
+                  Si vous perdez tous vos cœurs, vous mourrez et revenez au
+                  lobby central.
+                </p>
+              </li>
+              <li class="tutorial-item">
+                <h3 class="tutorial-title">PIÈCES ET PORTAILS</h3>
+                <p>
+                  Chaque niveau contient des pièces à collecter. Vous devez
+                  toutes les récupérer pour activer le portail de sortie.
+                </p>
+                <p>
+                  Les portails inactifs apparaissent transparents et ne peuvent
+                  pas être utilisés.
+                </p>
+                <p>
+                  Une fois toutes les pièces collectées, approchez-vous du
+                  portail et appuyez sur <span class="key">E</span> pour
+                  l'activer.
+                </p>
+              </li>
+              <li class="tutorial-item">
+                <h3 class="tutorial-title">SYSTÈME DE QUIZ</h3>
+                <p>
+                  Après avoir activé un portail, vous devrez répondre à une
+                  question de culture générale pour pouvoir passer au niveau
+                  suivant.
+                </p>
+                <p>
+                  Utilisez <span class="key">↑</span> et
+                  <span class="key">↓</span> pour naviguer entre les réponses,
+                  puis <span class="key">ENTRÉE</span> pour confirmer.
+                </p>
+                <p>
+                  Si vous répondez correctement, vous progressez vers le niveau
+                  suivant.
+                </p>
+                <p>
+                  Si vous vous trompez trop de fois, vous serez renvoyé au
+                  lobby.
+                </p>
+              </li>
+              <li class="tutorial-item">
+                <h3 class="tutorial-title">TÉLÉPORTEURS</h3>
+                <p>
+                  Dans le lobby central, vous trouverez des téléporteurs qui
+                  vous permettent d'accéder aux différents niveaux.
+                </p>
+                <p>
+                  Approchez-vous d'un téléporteur et appuyez sur
+                  <span class="key">E</span> pour ouvrir le menu de sélection.
+                </p>
+                <p>
+                  Utilisez <span class="key">↑</span> et
+                  <span class="key">↓</span> pour choisir votre destination,
+                  puis <span class="key">ENTRÉE</span> pour confirmer.
+                </p>
+                <p>
+                  Les niveaux deviennent accessibles au fur et à mesure que vous
+                  progressez dans le jeu.
+                </p>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Astuces de gameplay -->
+          <section class="content-panel">
+            <h2 class="section-title">ASTUCES DE GAMEPLAY</h2>
+            <ul class="tutorial-list">
+              <li class="tutorial-item">
+                <h3 class="tutorial-title">PROGRESSION DES NIVEAUX</h3>
+                <p>
+                  1. <strong>Niveau 1:</strong> Niveau d'introduction qui vous
+                  apprend les bases du mouvement
+                </p>
+                <p>
+                  2. <strong>Niveau 2:</strong> Introduction de plateformes plus
+                  complexes
+                </p>
+                <p>
+                  3. <strong>Niveau 3:</strong> Présence des premiers ennemis -
+                  utilisez <span class="key">Z</span> pour les combattre
+                </p>
+                <p>
+                  4. <strong>Niveau 4:</strong> Niveau plus difficile avec
+                  davantage d'ennemis et de pièges
+                </p>
+                <p>
+                  5. <strong>Niveau 5:</strong> Combat final contre le dragon
+                  Pyroflamme
+                </p>
+              </li>
+              <li class="tutorial-item">
+                <h3 class="tutorial-title">DOUBLE SAUT</h3>
+                <p>
+                  1. Appuyez sur <span class="key">ESPACE</span> pour sauter
+                  normalement
+                </p>
+                <p>
+                  2. Pendant que vous êtes en l'air, appuyez à nouveau sur
+                  <span class="key">ESPACE</span> pour effectuer un double saut
+                </p>
+                <p>
+                  3. Le double saut vous permet d'atteindre des plateformes
+                  élevées ou d'éviter des obstacles
+                </p>
+                <p>
+                  4. Utilisez cette technique pour explorer les zones difficiles
+                  d'accès et collecter toutes les pièces
+                </p>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Section de dépannage -->
+          <section class="content-panel">
+            <h2 class="section-title">DÉPANNAGE</h2>
+            <ul class="tutorial-list">
+              <li class="tutorial-item">
+                <h3 class="tutorial-title">PROBLÈMES COURANTS</h3>
+                <p>
+                  <strong>Le jeu est trop lent :</strong> Assurez-vous qu'aucune
+                  application gourmande en ressources ne tourne en arrière-plan
+                </p>
+                <p>
+                  <strong>Pas de son :</strong> Vérifiez que le son n'est pas
+                  coupé dans le menu principal (icône en bas de l'écran)
+                </p>
+                <p>
+                  <strong>Impossible de passer un niveau :</strong> Assurez-vous
+                  d'avoir collecté toutes les pièces avant d'activer le portail
+                </p>
+                <p>
+                  <strong>Bloqué dans un quiz :</strong> Répondez correctement à
+                  la question ou vous serez renvoyé au lobby après plusieurs
+                  échecs
+                </p>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
+
+      <footer>
+        <div class="container">
+          <p>Site fait avec ❤️ par Elliot Moreau</p>
+          <ul class="footer-links">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="about.html">À Propos</a></li>
+            <li><a href="#">Aide</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
