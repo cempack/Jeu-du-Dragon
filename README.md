@@ -6,8 +6,8 @@
 
 ## Site web et trailer
 
-- **Site web** : [https://cempack.github.io/Jeu-du-Dragon/](https://cempack.github.io/Jeu-du-Dragon/)
-- **Trailer** : [https://youtu.be/1J9J9J9J9J9](https://youtu.be/1J9J9J9J9J9)
+- **Site web** : [https://nsi-edmond.fr/Dragon](https://nsi-edmond.fr/Dragon)
+- **Trailer** : [https://youtu.be/gmlDG2J0hXs](https://youtu.be/gmlDG2J0hXs)
 
 ---
 
