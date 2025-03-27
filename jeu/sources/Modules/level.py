@@ -29,17 +29,17 @@ class Level:
         tiled_map = load_pygame(self.level_path)
         self.map_width = tiled_map.width * tiled_map.tilewidth
         self.map_height = tiled_map.height * tiled_map.tileheight
-
+    
         # Ajout des murs aux limites
         self.objects.append(Box(-10, 0, 10, self.map_height))
         self.objects.append(Box(self.map_width, 0, 10, self.map_height))
-
+    
         # Premier passage - collecte des positions d'ennemis
         for layer in tiled_map.visible_layers:
             if layer.name == "Enemy":
                 for x, y, image in layer.tiles():
                     enemy_positions.append((x * tiled_map.tilewidth, y * tiled_map.tileheight))
-
+    
         # Définition des gestionnaires de couches
         layer_handlers = {
             "Background": lambda x, y, img: Background(x, y, tiled_map.tilewidth, tiled_map.tileheight, img),
@@ -52,7 +52,7 @@ class Level:
                 if self.level_name == "Level5" else Enemy(x, y, tiled_map.tilewidth, tiled_map.tileheight, "FireMonster"),
             "Dragon": lambda x, y, img: Dragon(x, y, tiled_map.tilewidth * 4, tiled_map.tileheight * 4)
         }
-
+    
         # Ordre de rendu des couches (arrière-plan à premier plan)
         layer_order = [
             "Background",
@@ -64,22 +64,29 @@ class Level:
             "Portal",
             "Teleporter"
         ]
-
+    
+        # Regrouper les couches par nom pour gérer les doublons
+        layers_by_name = {}
+        for layer in tiled_map.visible_layers:
+            if layer.name not in layers_by_name:
+                layers_by_name[layer.name] = []
+            layers_by_name[layer.name].append(layer)
+    
         # Traitement des couches dans l'ordre spécifié
         for layer_name in layer_order:
-            for layer in tiled_map.visible_layers:
-                if layer.name == layer_name:
+            if layer_name in layers_by_name:
+                for layer in layers_by_name[layer_name]:
                     for x, y, image in layer.tiles():
                         tile_x = x * tiled_map.tilewidth
                         tile_y = y * tiled_map.tileheight
-
+    
                         # Ignore les tuiles de terrain qui chevauchent les positions d'ennemis
-                        if layer.name == "Terrain" and (tile_x, tile_y) in enemy_positions:
+                        if layer_name == "Terrain" and (tile_x, tile_y) in enemy_positions:
                             continue
-
-                        if layer.name in layer_handlers:
-                            self.objects.append(layer_handlers[layer.name](tile_x, tile_y, image))
-
+                        
+                        if layer_name in layer_handlers:
+                            self.objects.append(layer_handlers[layer_name](tile_x, tile_y, image))
+    
         return self.objects
     
     def check_level_complete(self):
